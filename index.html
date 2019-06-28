@@ -1,12 +1,18 @@
 <html>
   <head>
   <link rel="stylesheet" href="index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="index.js"></script>
+
   </head>
-  
+
   <body>
 
+
+  <div id="top">
   <h1>Welcome to my portfolio.</h1>
-
+  </div>
+<div id="aboutMe">
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Proin varius, nunc vitae cursus efficitur, enim sem condimentum
 nulla, id aliquam sem magna vel felis. Sed rutrum nisi eget
@@ -21,7 +27,17 @@ purus mattis congue. Integer luctus euismod volutpat. Etiam semper.</p>
 Proin varius, nunc vitae cursus efficitur, enim sem condimentum
 nulla, id aliquam sem magna vel felis. Sed rutrum nisi eget
 purus mattis congue. Integer luctus euismod volutpat. Etiam semper.</p>
+</div>
+<div id="menubtn">
+<span style="font-size:30px;cursor:pointer" onclick="openMenu()">&#9776;</span>
+</div>
 
-  </body>
-
+<div id="sidebar">
+  <a href="javascript:" class="closebtn" onclick="closeMenu()">&times;</a>
+  <a href="javascript:" onclick="scrolltTop()">Welcome</a>
+  <a href="javascript:" onclick="scrollAboutMe()">About&nbsp;Me</a>
+  <a href="javascript:" onclick="scrollAbilities()">Abilities</a>
+  <a href="javascript:" onclick="scrollProjects()">Projects</a>
+</div>
+</body>
 </html>
