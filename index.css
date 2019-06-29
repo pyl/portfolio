@@ -19,10 +19,16 @@ h1 {
 h2 {
   color: #c2c5cc;
   text-align: center;
-  font-family: aliseo;
+  font-family: 'lato',sans-serif;
   font-size: 30px;
+  margin:0px;
+  margin-bottom: 20px;
 }
 
+p {
+  margin: 20px;
+  font-family: 'lato',sans-serif;
+}
 /* * {
   box-sizing: border-box;
 } */
@@ -52,10 +58,9 @@ body {
 
   background-image: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
   overflow:hidden;
-  padding-bottom: 8px;
   height:100%;
   width:100%;
-  box-shadow: 5px 5px 5px #aaaaaa;
+
 }
 
 #circles {
@@ -82,7 +87,29 @@ padding: 0px 4px;
   vertical-align: middle;
   margin-top:8px;
 }
+#aboutMe {
+  padding:20px;
+  margin:0px;
+  background-color: white;
+}
+#flexAbout {
+  display: flex;
+  flex-wrap: wrap;
+}
+.textbox {
+  border: 5px solid black;
+  width:50%;
+}
 
+#selfie {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top:20px;
+  width:25%;
+  height:25%;
+  border-radius: 50%;
+}
 #menubtn {
   margin:12px;
   font-size:50px;
