@@ -3,12 +3,17 @@
   src: url(aliseo-noncommercial.otf);
 }
 
+button:focus {outline:0;}
+
 h1 {
-  padding:30px;
-  color: #2a5b84;
+  padding:0px;
+  color: white;
   font-size: 75px;
   text-align: center;
-  font-family: aliseo;
+  font-family: 'lato',sans-serif;
+  font-weight: 300;
+  font-size: 70px;
+  letter-spacing: 10px;
 }
 
 h2 {
@@ -27,6 +32,7 @@ body {
 }
 
 #goButton {
+  cursor: pointer;
   position:absolute;
   top:50%;
   left:50%;
@@ -43,10 +49,13 @@ body {
   position: relative;
   width:100%;
   margin:0px;
-  background-color: #e2e1d2;
+
+  background-image: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  overflow:hidden;
   padding-bottom: 8px;
   height:100%;
   width:100%;
+  box-shadow: 5px 5px 5px #aaaaaa;
 }
 
 #circles {
@@ -104,13 +113,16 @@ padding: 0px 4px;
   position:relative;
   text-decoration: none;
   font-size: 40px;
+  font-family: 'lato',sans-serif;
   padding: 8px 12px 8px 30px;
-  transition: 0.3s;
+  transition: all 0.3s ease-in-out 0s;
   color: white;
 }
 
+
+
 #sidebar a:before {
-  background-color: red;
+  background-color: #d22631;
   content:"";
   position: absolute;
   width:0vw;
@@ -118,11 +130,14 @@ padding: 0px 4px;
   left:0px;
   bottom:45%;
   transition: all 0.3s ease-in-out 0s;
+  z-index: -1;
 }
 
 
 #sidebar a:hover:before {
   width:100vw;
+  transform: scaleY(2);
+
 }
 
 /* #sidebar a:hover {
@@ -139,6 +154,40 @@ padding: 0px 4px;
 
 #hamButton {
   position:fixed;
-  top:0;
-  left:0;
+  top:10px;
+  left:10px;
+}
+
+#goButton {
+  border: 2px solid white;
+  border-radius: 0px;
+  font-family: 'lato',sans-serif;
+  color:white;
+
+}
+
+
+#goButton:before {
+  z-index: -1;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:0px;
+  height:2px;
+  content:"";
+  background-color: #d22631;
+    -webkit-transition: width 0.1s,
+    height 0s 0.1s;
+}
+
+#goButton:hover:before {
+  width:100%;
+  height:100%;
+  transition:
+    width 0.2s,
+    height 0.2s 0.2s;
+}
+
+@buttonfill {
+
 }

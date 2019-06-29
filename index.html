@@ -2,7 +2,7 @@
 
 <html>
   <head>
-
+  <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="index.css">
   <link href="hamburgers.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -17,7 +17,7 @@
     <canvas id=circles></canvas>
   <h1>Paul Beltran</h1>
 
-  <button id=goButton>View Projects</button>
+  <button id="goButton" onclick="scrollAboutMe()">View Projects</button>
   <!-- <div id="imageGallery">
     <div class="column">
     <img src="https://via.placeholder.com/150x200"></img>
@@ -83,8 +83,8 @@ purus mattis congue. Integer luctus euismod volutpat. Etiam semper.</p>
 
 
   <!-- <a href="javascript:" style="font-size:30px;cursor:pointer" class="closebtn" onclick="toggleMenu()">&#9776;</a> -->
-  <a href="javascript:" onclick="scrolltTop()">Welcome</a><br>
-  <a href="javascript:" onclick="scrollAboutMe()">About&nbsp;Me</a><br>
+  <a href="javascript:" onclick="scrolltTop();toggleMenu();">Welcome</a><br>
+  <a href="javascript:" onclick="scrollAboutMe();toggleMenu();">About&nbsp;Me</a><br>
   <a href="javascript:" onclick="scrollAbilities()">Abilities</a><br>
   <a href="javascript:" onclick="scrollProjects()">Projects</a><br>
 </div>

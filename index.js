@@ -87,11 +87,7 @@ function randomNumber(min,max)
 
 
 var colorArray = [
-  "#C84127",
-  "#67C5C2",
-  "#3D2117",
-  "#FEFCE8",
-  "#000000",
+  "#ffffff",
   "",
 ];
 
@@ -99,7 +95,7 @@ var colorArray = [
 
 
 
-var maxRadius = 50;
+var maxRadius = 20;
 //var minRadius = radius;
 
 
@@ -115,7 +111,7 @@ function Circle(x,y,radius,dx,dy) {
   this.draw = function() {
     c.beginPath();
     c.arc(this.x,this.y,this.radius,0,Math.PI*2);
-    c.stroke();
+
     c.fillStyle = this.color;
     c.fill();
   }
@@ -123,26 +119,26 @@ function Circle(x,y,radius,dx,dy) {
 
 //template of circle movement
   this.update = function() {
-if(this.x+this.radius>canX || this.x - this.radius < 0) {
-  this.dx=-this.dx;
+if(this.x-this.radius>canX) {
+  this.x=-this.radius;
+}
+if(this.x+this.radius < 0) {
+  this.x = canX+this.radius;
 }
 
-if(this.y+this.radius>canY || this.y - this.radius < 0) {
-  this.dy=-this.dy;
-}
 this.x+=this.dx;
 this.y+=this.dy;
 
 //interactivity
 
 //when mouse close
-if (trueX - this.x < 100 && trueX - this.x > -100
-  && trueY - this.y < 100 && trueY - this.y > -100
+if (trueX - this.x < 50 && trueX - this.x > -50
+  && trueY - this.y < 50 && trueY - this.y > -50
   ) {
     if (this.radius < maxRadius) {
       this.radius += 4;
     }
-} else if (this.radius > this.minRadius) {
+} else if (this.radius > this.minRadius && this.radius-0.4 > 0) {
   this.radius -=0.4;
 }
 
@@ -154,12 +150,13 @@ if (trueX - this.x < 100 && trueX - this.x > -100
 
 var circleArray = [];
 
-for (var i = 0; i < 200; i++) {
+for (var i = 0; i < 250; i++) {
 var x = Math.random()*canX;
-var dx = randomNumber(-1,1);
+
 var y = Math.random()*canY;
 var dy = 0;
-var radius = Math.random()*3+2;
+var radius = Math.random()*3+0.1;
+var dx = (4-radius)/4;
 circleArray.push(
   new Circle(x,y,radius,dx,dy))
 }
