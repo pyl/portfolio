@@ -1,18 +1,45 @@
+
+
 <html>
   <head>
-  <link rel="stylesheet" href="index.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="index.js"></script>
 
+  <link rel="stylesheet" href="index.css">
+  <link href="hamburgers.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="index.js" defer></script>
+  <title>Paul Beltran</title>
   </head>
 
   <body>
 
 
   <div id="top">
-  <h1>Welcome to my portfolio.</h1>
+    <canvas id=circles></canvas>
+  <h1>Paul Beltran</h1>
+
+  <button id=goButton>View Projects</button>
+  <!-- <div id="imageGallery">
+    <div class="column">
+    <img src="https://via.placeholder.com/150x200"></img>
+    <img src="https://via.placeholder.com/50"></img>
+    </div>
+    <div class="column">
+    <img src="buton.png"></img>
+    <img src="https://via.placeholder.com/50x50"></img>
+    </div>
+    <div class="column">
+    <img src="https://via.placeholder.com/150x50"></img>
+    <img src="https://via.placeholder.com/50"></img>
+    </div>
+    <div class="column">
+    <img src="https://via.placeholder.com/150x50"></img>
+    <img src="https://via.placeholder.com/50"></img>
+    </div>
+  </div> -->
+
   </div>
 <div id="aboutMe">
+  <h2>About</h2>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Proin varius, nunc vitae cursus efficitur, enim sem condimentum
 nulla, id aliquam sem magna vel felis. Sed rutrum nisi eget
@@ -26,14 +53,36 @@ purus mattis congue. Integer luctus euismod volutpat. Etiam semper.</p>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Proin varius, nunc vitae cursus efficitur, enim sem condimentum
 nulla, id aliquam sem magna vel felis. Sed rutrum nisi eget
+purus mattis congue. Integer luctus euismod volutpat. Etiam semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Proin varius, nunc vitae cursus efficitur, enim sem condimentum
+nulla, id aliquam sem magna vel felis. Sed rutrum nisi eget
+purus mattis congue. Integer luctus euismod volutpat. Etiam semper.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Proin varius, nunc vitae cursus efficitur, enim sem condimentum
+nulla, id aliquam sem magna vel felis. Sed rutrum nisi eget
+purus mattis congue. Integer luctus euismod volutpat. Etiam semper.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Proin varius, nunc vitae cursus efficitur, enim sem condimentum
+nulla, id aliquam sem magna vel felis. Sed rutrum nisi eget
+purus mattis congue. Integer luctus euismod volutpat. Etiam semper.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Proin varius, nunc vitae cursus efficitur, enim sem condimentum
+nulla, id aliquam sem magna vel felis. Sed rutrum nisi eget
+purus mattis congue. Integer luctus euismod volutpat. Etiam semper.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Proin varius, nunc vitae cursus efficitur, enim sem condimentum
+nulla, id aliquam sem magna vel felis. Sed rutrum nisi eget
 purus mattis congue. Integer luctus euismod volutpat. Etiam semper.</p>
 </div>
-<div id="menubtn">
-<span style="font-size:30px;cursor:pointer" onclick="openMenu()">&#9776;</span>
-</div>
+
 
 <div id="sidebar">
-  <a href="javascript:" class="closebtn" onclick="closeMenu()">&times;</a>
+
+    <button class="hamburger hamburger--spin" type="button" id="hamButton">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+
+  </button>
+
+
+  <!-- <a href="javascript:" style="font-size:30px;cursor:pointer" class="closebtn" onclick="toggleMenu()">&#9776;</a> -->
   <a href="javascript:" onclick="scrolltTop()">Welcome</a>
   <a href="javascript:" onclick="scrollAboutMe()">About&nbsp;Me</a>
   <a href="javascript:" onclick="scrollAbilities()">Abilities</a>
