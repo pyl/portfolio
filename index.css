@@ -18,9 +18,9 @@ h2 {
   font-size: 30px;
 }
 
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 body {
   margin:0px;
@@ -99,17 +99,30 @@ padding: 0px 4px;
   opacity:1;
 }
 
-#sidebar:before {
-
-}
 
 #sidebar a {
-  display: block;
+  position:relative;
   text-decoration: none;
   font-size: 40px;
   padding: 8px 12px 8px 30px;
   transition: 0.3s;
   color: white;
+}
+
+#sidebar a:before {
+  background-color: red;
+  content:"";
+  position: absolute;
+  width:0vw;
+  height:2px;
+  left:0px;
+  bottom:45%;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+
+#sidebar a:hover:before {
+  width:100vw;
 }
 
 /* #sidebar a:hover {

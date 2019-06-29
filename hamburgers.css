@@ -20,8 +20,10 @@
   margin: 0;
   overflow: visible; }
   .hamburger:hover {
+    color:red;
     opacity: 0.7; }
   .hamburger.is-active:hover {
+    color:red;
     opacity: 0.7; }
   .hamburger.is-active .hamburger-inner,
   .hamburger.is-active .hamburger-inner::before,
