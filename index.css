@@ -3,6 +3,12 @@
   src: url(aliseo-noncommercial.otf);
 }
 
+@keyframes fade-in {
+    from {opacity: 0; transform: scale(.7,.7)}
+    to {opacity: 1;}
+}
+
+
 button:focus {outline:0;}
 
 h1 {
@@ -21,19 +27,25 @@ h2 {
   text-align: center;
   font-family: 'lato',sans-serif;
   font-size: 30px;
-  margin:0px;
   margin-bottom: 20px;
 }
 
 p {
   margin: 20px;
   font-family: 'lato',sans-serif;
+  font-size: 20px;
 }
 /* * {
   box-sizing: border-box;
 } */
 
 body {
+  margin:0px;
+}
+
+.page {
+  position: relative;
+  width:100%;
   margin:0px;
 }
 
@@ -52,15 +64,9 @@ body {
 }
 
 #top {
-  position: relative;
-  width:100%;
-  margin:0px;
-
   background-image: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
   overflow:hidden;
   height:100%;
-  width:100%;
-
 }
 
 #circles {
@@ -88,8 +94,6 @@ padding: 0px 4px;
   margin-top:8px;
 }
 #aboutMe {
-  padding:20px;
-  margin:0px;
   background-color: white;
 }
 #flexAbout {
@@ -99,6 +103,8 @@ padding: 0px 4px;
 .textbox {
   border: 5px solid black;
   width:50%;
+  font-size: 20px;
+  margin:20px;
 }
 
 #selfie {
@@ -110,6 +116,12 @@ padding: 0px 4px;
   height:25%;
   border-radius: 50%;
 }
+
+#abilitiesPage {
+  background-color: #ECECEC;
+  padding-top:1px;
+}
+
 #menubtn {
   margin:12px;
   font-size:50px;
@@ -200,7 +212,7 @@ padding: 0px 4px;
   left:0px;
   top:0px;
   width:0px;
-  height:2px;
+  height:4px;
   content:"";
   background-color: #d22631;
     -webkit-transition: width 0.1s,

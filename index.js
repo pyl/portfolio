@@ -1,3 +1,7 @@
+
+  AOS.init();
+
+
 var menuOpen = false;
 
 
@@ -27,16 +31,19 @@ function toggleMenu() {
 function scrolltTop() {
 
   document.getElementById("top").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  
 }
 
 function scrollAboutMe() {
 
   document.getElementById("aboutMe").scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+
 }
-// function scrollAbilities() {
-//
-//   document.getElementById("top").scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
-// }
+function scrollAbilities() {
+
+  document.getElementById("abilitiesPage").scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+
+}
 //
 // function scrollProjects() {
 //
@@ -45,8 +52,8 @@ function scrollAboutMe() {
 
 
 
-var canvas = document.getElementById("circles");
-
+var canvas = document.querySelector("canvas");
+console.log(canvas)
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }

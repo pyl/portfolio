@@ -3,11 +3,16 @@
 <html>
   <head>
   <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
+  <link href="aos.css" rel="stylesheet">
+  <script src="aos.js"></script>
   <link rel="stylesheet" href="index.css">
   <link href="hamburgers.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="index.js" defer></script>
   <title>Paul Beltran</title>
+  <script>
+  AOS.init();
+</script>
   </head>
 
   <body>
@@ -18,41 +23,23 @@
   <h1>Paul Beltran</h1>
 
   <button id="goButton" onclick="scrollAboutMe()">View Projects</button>
-  <!-- <div id="imageGallery">
-    <div class="column">
-    <img src="https://via.placeholder.com/150x200"></img>
-    <img src="https://via.placeholder.com/50"></img>
-    </div>
-    <div class="column">
-    <img src="buton.png"></img>
-    <img src="https://via.placeholder.com/50x50"></img>
-    </div>
-    <div class="column">
-    <img src="https://via.placeholder.com/150x50"></img>
-    <img src="https://via.placeholder.com/50"></img>
-    </div>
-    <div class="column">
-    <img src="https://via.placeholder.com/150x50"></img>
-    <img src="https://via.placeholder.com/50"></img>
-    </div>
-  </div> -->
 
   </div>
-<div id="aboutMe">
-  <h2>About Me</h2>
+<div id="aboutMe" class="page">
+  <h2 data-aos="zoom-in">About Me</h2>
   <div id=flexAbout>
-  <div class="textbox">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  <div class="textbox" data-aos="fade-right">
+  <p data-aos="fade-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Proin varius, nunc vitae cursus efficitur, enim sem condimentum
 nulla, id aliquam sem magna vel felis. Sed rutrum nisi eget
 purus mattis congue. Integer luctus euismod volutpat. Etiam semper.</p>
 
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  <p data-aos="fade-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Proin varius, nunc vitae cursus efficitur, enim sem condimentum
 nulla, id aliquam sem magna vel felis. Sed rutrum nisi eget
 purus mattis congue. Integer luctus euismod volutpat. Etiam semper.</p>
 
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  <p data-aos="fade-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Proin varius, nunc vitae cursus efficitur, enim sem condimentum
 nulla, id aliquam sem magna vel felis. Sed rutrum nisi eget
 purus mattis congue. Integer luctus euismod volutpat. Etiam semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -72,8 +59,12 @@ Proin varius, nunc vitae cursus efficitur, enim sem condimentum
 nulla, id aliquam sem magna vel felis. Sed rutrum nisi eget
 purus mattis congue. Integer luctus euismod volutpat. Etiam semper.</p>
 </div>
-<img src="https://dummyimage.com/400x400/000/fff" id="selfie"></img>
+<img src="https://dummyimage.com/400x400/000/fff" id="selfie" data-aos="fadee"></img>
 </div>
+</div>
+<div id="abilitiesPage" class="page">
+  <h2>Abilities</h2>
+  <p>hello</p>
 </div>
 
 
@@ -91,8 +82,9 @@ purus mattis congue. Integer luctus euismod volutpat. Etiam semper.</p>
   <!-- <a href="javascript:" style="font-size:30px;cursor:pointer" class="closebtn" onclick="toggleMenu()">&#9776;</a> -->
   <a href="javascript:" onclick="scrolltTop();toggleMenu();">Welcome</a><br>
   <a href="javascript:" onclick="scrollAboutMe();toggleMenu();">About&nbsp;Me</a><br>
-  <a href="javascript:" onclick="scrollAbilities()">Abilities</a><br>
-  <a href="javascript:" onclick="scrollProjects()">Projects</a><br>
+  <a href="javascript:" onclick="scrollAbilities();toggleMenu();">Abilities</a><br>
+  <a href="javascript:" onclick="scrollProjects();toggleMenu();">Projects</a><br>
 </div>
 </body>
+
 </html>
