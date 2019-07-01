@@ -1,9 +1,17 @@
 
-  AOS.init();
+  AOS.init({
+    once: true
+  });
 
 
 var menuOpen = false;
 
+function removeDelay() {
+  var elements = document.getElementsByClassName("column")
+  for(var i = 0; i < elements.length; i++) {
+    elements[i].setAttribute("data-aos-delay", "0");
+  }
+}
 
 function toggleMenu() {
   if(!menuOpen) {
@@ -31,7 +39,7 @@ function toggleMenu() {
 function scrolltTop() {
 
   document.getElementById("top").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-  
+
 }
 
 function scrollAboutMe() {

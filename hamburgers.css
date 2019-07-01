@@ -1,10 +1,4 @@
-/*!
- * Hamburgers
- * @description Tasty CSS-animated hamburgers
- * @author Jonathan Suh @jonsuh
- * @site https://jonsuh.com/hamburgers
- * @link https://github.com/jonsuh/hamburgers
- */
+
 .hamburger {
   padding: 15px 15px;
   display: inline-block;
@@ -26,7 +20,7 @@
   .hamburger.is-active .hamburger-inner,
   .hamburger.is-active .hamburger-inner::before,
   .hamburger.is-active .hamburger-inner::after {
-    background-color: #fff; }
+    background-color: #7d7d7d; }
 
 .hamburger-box {
   width: 40px;
@@ -41,7 +35,7 @@
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 40px;
     height: 4px;
-    background-color: #fff;
+    background-color: #7d7d7d;
     border-radius: 4px;
     position: absolute;
     transition-property: transform;
