@@ -161,7 +161,10 @@ if (trueX - this.x < 50 && trueX - this.x > -50
   }
 }
 
-
+window.addEventListener("resize", function() {
+  canvas.width = canX;
+  canvas.height = canY;
+})
 
 
 var circleArray = [];
