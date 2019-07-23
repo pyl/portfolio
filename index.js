@@ -6,6 +6,10 @@
 
 var menuOpen = false;
 
+
+
+
+
 function removeDelay() {
   var elements = document.getElementsByClassName("column")
   for(var i = 0; i < elements.length; i++) {
@@ -161,7 +165,10 @@ if (trueX - this.x < 50 && trueX - this.x > -50
   }
 }
 
-
+window.addEventListener("resize", function() {
+  
+  c.clearRect(0,0,innerWidth,innerHeight);
+})
 
 
 var circleArray = [];

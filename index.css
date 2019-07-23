@@ -31,6 +31,12 @@ h2 {
 }
 
 h3 {
+  padding-top: 75px;
+  text-align: center;
+  font-family: 'lato',sans-serif;
+}
+
+h4 {
   text-align: center;
   font-family: 'lato',sans-serif;
 }
@@ -93,8 +99,10 @@ body {
 padding: 0px 4px;
 }
 
-#imageGallery .column img {
+#imageGallery .column img
+{
   width:100%;
+  height:100%;
   vertical-align: middle;
   margin-top:8px;
 }
@@ -112,6 +120,12 @@ padding: 0px 4px;
   margin:20px;
 }
 
+@media (max-width:1500px) {
+  .textbox {
+    width:100%;
+  }
+}
+
 #selfie {
   margin-left: auto;
   margin-right: auto;
@@ -120,6 +134,13 @@ padding: 0px 4px;
   width:25%;
   height:25%;
   border-radius: 50%;
+  vertical-align: middle;
+}
+@media (max-width:629px) {
+#selfie {
+  width:100%;
+}
+
 }
 
 #abilitiesPage {
@@ -127,77 +148,74 @@ padding: 0px 4px;
 }
 
 .row {
-  padding: 0;
- margin: 0;
- list-style: none;
- display: -webkit-box;
- display: -moz-box;
- display: -ms-flexbox;
- display: -webkit-flex;
- display: flex;
- -webkit-flex-flow: row;
- justify-content: space-around;
- line-height:30px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 }
 
 .square {
 
 }
-
+@media(max-width: 1333px) {
+  .column {
+    flex-basis: 33.33%;
+  }
+}
+@media(max-width: 1073px) {
+   .column {
+    flex-basis: 33.33%;
+  }
+}
+@media(max-width: 815px) {
+  .column {
+    flex-basis: 50%;
+  }
+}
+@media(max-width: 555px) {
+  .column {
+    flex-basis: 100%;
+  }
+}
 
 .column {
-  position:relative;
-  background: tomato;
-   margin: 50px;
-   color: white;
-   font-weight: bold;
-   font-size: 1.5em;
-   text-align: center;
-   flex: 1 0 0px;
-   min-width: 1.5em;
-   z-index:1;
+
+
+flex-basis: 33%;
+-ms-flex: auto;
+width: 259px;
+height:350px;
+position: relative;
+padding: 10px;
+box-sizing: border-box;
 }
 
-.column:before {
-  content: "";
- display: block;
- padding-top: 100%;
-   float: left;
-
-}
-
-.column:hover {
-
-}
-
-.column:after {
-  position: absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  content:"";
-  background-color: inherit;
-  z-index: -10;
-}
-
-.column:hover:after {
-}
 
 .column img {
-  width: 200px;
-  position: absolute;
-  top: 50%;
-  left:50%;
-  margin-top:-25%;
-  margin-left:-25%;
+  display:block;
+    margin:auto;
+  width:200px;
 }
 
-.square img:after {
+.projectcard {
+  background-color: yellow;
+  
+  display: inline-block;
+}
 
-  content: "";
-display: block;
-padding-bottom: 100%;
+.prow {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.pcolumn {
+  flex-basis: 33%;
+  -ms-flex: auto;
+  width: 259px;
+  height:350px;
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 #menubtn {
@@ -223,6 +241,7 @@ padding-bottom: 100%;
   overflow-x: hidden;
   padding-top: 60px;
   opacity:1;
+  z-index: 2;
 }
 
 
