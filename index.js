@@ -166,8 +166,13 @@ if (trueX - this.x < 50 && trueX - this.x > -50
 }
 
 window.addEventListener("resize", function() {
+<<<<<<< HEAD
   
   c.clearRect(0,0,innerWidth,innerHeight);
+=======
+  canvas.width = canX;
+  canvas.height = canY;
+>>>>>>> 091275304f089cd440d2e92705fce5261680f2ba
 })
 
 
