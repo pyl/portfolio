@@ -7,12 +7,40 @@
   <script src="aos.js"></script>
   <link rel="stylesheet" href="index.css">
   <link href="hamburgers.css" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="index.js" defer></script>
-  <title>Paul Beltran</title>
+  <title>Portfolio</title>
   <script>
   AOS.init();
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    // Add smooth scrolling to all links
+    $("a").on('click', function(event) {
+  
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+  
+        // Store hash
+        var hash = this.hash;
+  
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+     
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+  </script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
@@ -21,114 +49,136 @@
 
   <div id="top">
     <canvas id=circles></canvas>
-  <h1>Paul Beltran</h1>
+  <h1>PAUL BELTRAN</h1>
+  <h6>Your Typical Computer Science Student</h6>
 
-  <button id="goButton" onclick="scrollAboutMe()">View Projects</button>
+<a href = "#projectspage"><button id="goButton">View Projects</button></a>
 
-  </div>
-<div id="aboutMe" class="page">
-  <h2 data-aos="zoom-in">About Me</h2>
-  <div id=flexAbout>
-  <div class="textbox" data-aos="fade-right">
-  <p data-aos="fade-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Proin varius, nunc vitae cursus efficitur, enim sem condimentum
-nulla, id aliquam sem magna vel felis. Sed rutrum nisi eget
-purus mattis congue. Integer luctus euismod volutpat. Etiam semper.</p>
-
-  <p data-aos="fade-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Proin varius, nunc vitae cursus efficitur, enim sem condimentum
-nulla, id aliquam sem magna vel felis. Sed rutrum nisi eget
-purus mattis congue. Integer luctus euismod volutpat. Etiam semper.</p>
-
-  <p data-aos="fade-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Proin varius, nunc vitae cursus efficitur, enim sem condimentum
-nulla, id aliquam sem magna vel felis. Sed rutrum nisi eget
-purus mattis congue. Integer luctus euismod volutpat. Etiam semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Proin varius, nunc vitae cursus efficitur, enim sem condimentum
-nulla, id aliquam sem magna vel felis. Sed rutrum nisi eget
-purus mattis congue. Integer luctus euismod volutpat. Etiam semper.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Proin varius, nunc vitae cursus efficitur, enim sem condimentum
-nulla, id aliquam sem magna vel felis. Sed rutrum nisi eget
-purus mattis congue. Integer luctus euismod volutpat. Etiam semper.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Proin varius, nunc vitae cursus efficitur, enim sem condimentum
-nulla, id aliquam sem magna vel felis. Sed rutrum nisi eget
-purus mattis congue. Integer luctus euismod volutpat. Etiam semper.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Proin varius, nunc vitae cursus efficitur, enim sem condimentum
-nulla, id aliquam sem magna vel felis. Sed rutrum nisi eget
-purus mattis congue. Integer luctus euismod volutpat. Etiam semper.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Proin varius, nunc vitae cursus efficitur, enim sem condimentum
-nulla, id aliquam sem magna vel felis. Sed rutrum nisgi eget
-purus mattis congue. Integer luctus euismod volutpat. Etiam semper.</p>
-</div>
-<img src="https://dummyimage.com/400x400/000/fff" id="selfie" data-aos="fadee"></img>
-</div>
-</div>
-
-
-<div id="abilitiesPage" class="page">
-<h2 data-aos="zoom-in">Abilities</h2>
-  <div class="row">
-
-  <div class="column"data-aos="fadee"data-aos-delay="0" onmouseover="removeDelay()">
-    <img src="img/htmllogo3.png" class=square>
-    <h4>html</h4>
-  </div>
-  <div class="column"data-aos="fadee"data-aos-delay="100" onmouseover="removeDelay()">
-    <img src="img/js.png" class=square>
-    <h4>javascript</h4>
-  </div>
-  <div class="column"data-aos="fadee"data-aos-delay="200" onmouseover="removeDelay()">
-    <img src="img/csslogonew.png" class=square>
-    <h4>css</h4>
-    </div>
-  <div class="column"data-aos="fadee"data-aos-delay="0" onmouseover="removeDelay()">
-    <img src="img/python.png" class=square>
-    <h4>python</h4>
-    </div>
-    <div class="column"data-aos="fadee"data-aos-delay="100" onmouseover="removeDelay()">
-      <img src="img/python.png" class=square>
-      <h4>python</h4>
-      </div>
-      <div class="column"data-aos="fadee"data-aos-delay="200" onmouseover="removeDelay()">
-        <img src="img/python.png" class=square>
-        <h4>python</h4>
-      </div>
   </div>
 
 
-</div>
+
+
+
 
 <div id=projectspage>
-  <h2>Projects</h2>
+
+
+
+<div>
+
+<div class="textbox">
+
+</div>
+
+
+
+  <h2>PROJECTS</h2>
+  <div id="projectgrid">
   <div class=pcolumn>
   <div class="prow">
-    <div class="pcontent">
+    <div class="pcontent" data-aos="fade-right" data-aos-delay="400">
+      <a href="https://python8u.github.io/portfolio/">
+        <img src="img/portimg.png">
+      </a>
+      <p>Portfolio</p>
       </div>
     </div>
     <div class="prow">
-      <div class="pcontent">
+      <div class="pcontent" data-aos="fade-right" data-aos-delay="300">
+
+        <a href=" ">
+          <img src="img/whitebox.png">
+      </a>
+      <p></p>
+
         </div>
     </div>
     <div class="prow">
-      <div class="pcontent">
+      <div class="pcontent" data-aos="fade-right" data-aos-delay="200">
+        <a href=" ">
+          <img src="img/whitebox.png">
+      </a>
+      <p> </p>
         </div>
     </div>
     <div class="prow">
-      <div class="pcontent">
+      <div class="pcontent" data-aos="fade-right" data-aos-delay="100">
+        <a href=" ">
+          <img src="img/whitebox.png">
+      </a>
+      <p> </p>
         </div>
     </div>
   </div>
   <div class=pcolumn>
   <div class="prow">
+    <div class="pcontent" data-aos="fade-right" data-aos-delay="600">
+      <a href=" ">
+        <img src="img/whitebox.png">
+    </a>
+    <p> </p>
+      </div>
     </div>
     <div class="prow">
+      <div class="pcontent" data-aos="fade-right" data-aos-delay="500">
+        <a href=" ">
+          <img src="img/whitebox.png">
+      </a>
+      <p> </p>
+        </div>
     </div>
     <div class="prow">
+      <div class="pcontent" data-aos="fade-right" data-aos-delay="400">
+        <a href=" ">
+          <img src="img/whitebox.png">
+      </a>
+      <p> </p>
+        </div>
     </div>
     <div class="prow">
+      <div class="pcontent" data-aos="fade-right" data-aos-delay="300"> 
+        <a href=" ">
+          <img src="img/whitebox.png">
+      </a>
+      <p> </p>
+        </div>
     </div>
   </div>
+
 </div>
+</div>
+
+<div id="aboutMe" class="page">
+  <h2 c>ABOUT</h2>
+  
+  <div class="textbox">
+  <p data-aos="fade-right" data-aos-delay="500"> I'm a Computer Science major at Montgomery College. I am familiar with <b>HTML, CSS, javascript, python,</b>
+    and <b>C++</b>. My hobbies include video games, photography, and volunteering. At Montgomery College, I work as a computer science/math tutor and often volunteer at STEM events. 
+    I enjoy participating in hackathons with friends and exploring new topics such as machine learning and blockchain technologies.
+  </p>
+
+  <p data-aos="fade-right" data-aos-delay="500">My entire life is centered around one key philosophy: leaving the world better than I found it. To achieve this goal, I adopt a mindset of
+     self-improvement: I challenge myself to learn one new skill every day. Hopefully, with the skills I gradually build up, I may achieve my goal. In the meantime, however, I aim to help 
+     others by tutoring and volunteering at my college.
+     </p>
+
+  <p>If you're interested in working with me or simply want to chat, contact me below!</p>
+</div>
+
+
+</div>
+
+<div id = "Contact">
+  <div class="container">
+  <a  href = "https://www.instagram.com/paul_beltra_n/" class="fa fa-instagram fa-2x" aria-hidden="true"></a>
+  <a  href = "https://github.com/python8u" class="fa fa-github fa-2x" aria-hidden="true"></a>
+  <a  href = "https://www.linkedin.com/in/paul-beltran-7b0b521a8/" class="fa fa-linkedin fa-2x" aria-hidden="true"></a>
+
+ </div>
+ <h5>python8u@gmail.com
+ </h5>
+
 
 <div id="sidebar">
 
@@ -140,11 +190,10 @@ purus mattis congue. Integer luctus euismod volutpat. Etiam semper.</p>
   </button>
 
 
-  <!-- <a href="javascript:" style="font-size:30px;cursor:pointer" class="closebtn" onclick="toggleMenu()">&#9776;</a> -->
-  <a href="javascript:" onclick="scrolltTop();toggleMenu();">Welcome</a><br>
-  <a href="javascript:" onclick="scrollAboutMe();toggleMenu();">About&nbsp;Me</a><br>
-  <a href="javascript:" onclick="scrollAbilities();toggleMenu();">Abilities</a><br>
-  <a href="javascript:" onclick="scrollProjects();toggleMenu();">Projects</a><br>
+ 
+  <a  id = "sidebarWelcome" href="#top" onclick="toggleMenu();">Welcome</a>
+  <a id = "sidebarProjects" href="#projectspage" onclick="toggleMenu();">Projects</a>
+  <a  id = "sidebarAbout" href = "#aboutMe" onclick="toggleMenu();">About</a>
 </div>
 
 

@@ -7,7 +7,7 @@
 var menuOpen = false;
 
 
-
+window.onresize = function(){ location.reload(); }
 
 
 function removeDelay() {
@@ -42,25 +42,25 @@ function toggleMenu() {
 
 function scrolltTop() {
 
-  document.getElementById("top").scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  document.getElementById("top").scrollIntoView({behavior: "smooth", block: "start"});
 
 }
 
 function scrollAboutMe() {
 
-  document.getElementById("aboutMe").scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+  document.getElementById("aboutMe").scrollIntoView({behavior: "smooth", block: "end"});
 
 }
 function scrollAbilities() {
 
-  document.getElementById("abilitiesPage").scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+  document.getElementById("abilitiesPage").scrollIntoView({behavior: "smooth", block: "end"});
 
 }
-//
-// function scrollProjects() {
-//
-//   document.getElementById("top").scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
-// }
+
+function scrollProjects() {
+
+  document.getElementById("projectspage").scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
+}
 
 
 
