@@ -329,7 +329,7 @@ z-index: -999;
    display: -webkit-flex;
    display: flex;
    -webkit-flex-flow: row;
-   justify-content: space-around;
+   justify-content: -around;
    line-height:30px;
 }
 
@@ -520,7 +520,7 @@ color: white;
   border-style:solid; 
   border-color:#333333;
   background: #1565c0;
-  
+  margin-top: -10px;
 color: white;
 }
 
@@ -533,5 +533,5 @@ color: white;
  
   
   display: flex;
-  justify-content: space-between;
+  justify-content: -between;
 }
