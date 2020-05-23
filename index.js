@@ -92,10 +92,10 @@ canvas.width = canX;
 canvas.height = canY;
 
 window.addEventListener("mousemove", function(event) {
-   mouse.x = event.clientX;
+   mouse.x = event.clientX + document.body.scrollLeft+10;
    mouse.y = event.clientY + document.body.scrollTop;
-  trueX = mouse.x - rect.left;
-  trueY = mouse.y - rect.top;
+  trueX = mouse.x;
+  trueY = mouse.y;
 })
 
 var c = canvas.getContext("2d");
@@ -120,6 +120,20 @@ var colorArray = [
 var maxRadius = 20;
 //var minRadius = radius;
 
+function diff (num1, num2) {
+  if (num1 > num2) {
+    return (num1 - num2);
+  } else {
+    return (num2 - num1);
+  }
+};
+
+function dist (x1, y1, x2, y2) {
+  var deltaX = diff(x1, x2);
+  var deltaY = diff(y1, y2);
+  var dist = Math.sqrt(Math.pow(deltaX, 2) + Math.pow(deltaY, 2));
+  return (dist);
+};
 
 function Circle(x,y,radius,dx,dy) {
   this.x = x;
@@ -133,7 +147,6 @@ function Circle(x,y,radius,dx,dy) {
   this.draw = function() {
     c.beginPath();
     c.arc(this.x,this.y,this.radius,0,Math.PI*2);
-
     c.fillStyle = this.color;
     c.fill();
   }
@@ -154,9 +167,7 @@ this.y+=this.dy;
 //interactivity
 
 //when mouse close
-if (trueX - this.x < 50 && trueX - this.x > -50
-  && trueY - this.y < 50 && trueY - this.y > -50
-  ) {
+if (dist(trueX,trueY,this.x,this.y) < 50) {
     if (this.radius < maxRadius) {
       this.radius += 4;
     }
