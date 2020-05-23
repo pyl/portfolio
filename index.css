@@ -329,7 +329,7 @@ z-index: -999;
    display: -webkit-flex;
    display: flex;
    -webkit-flex-flow: row;
-   justify-content: -around;
+   justify-content: space-around;
    line-height:30px;
 }
 
@@ -530,5 +530,5 @@ color: white;
  
   
   display: flex;
-  justify-content: -between;
+  justify-content: space-between;
 }
