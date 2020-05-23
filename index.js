@@ -154,8 +154,8 @@ this.y+=this.dy;
 //interactivity
 
 //when mouse close
-if (trueX - this.x < this.radius && trueX - this.x > -this.radius
- && trueY - this.y < this.radius && trueY - this.y > -this.radius)
+if (trueX - this.x < this.radius+4 && trueX - this.x > -this.radius+4
+ && trueY - this.y < this.radius+4 && trueY - this.y > -this.radius+4)
 {
     if (this.radius < maxRadius) {
       this.radius += 4;
