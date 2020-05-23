@@ -10,6 +10,8 @@ var menuOpen = false;
 window.onresize = function(){ location.reload(); }
 
 
+
+
 function removeDelay() {
   var elements = document.getElementsByClassName("column")
   for(var i = 0; i < elements.length; i++) {
@@ -20,12 +22,12 @@ function removeDelay() {
 function toggleMenu() {
   if(!menuOpen) {
   document.getElementById("sidebar").style.width = "100%";
-  document.getElementById("sidebar").style.background = "rgba(0, 0, 0, 0.7)";
+  document.getElementById("sidebar").style.background = "rgba(0, 0, 0, 0.9)";
   document.getElementById("hamButton").classList.add("is-active");
   menuOpen = true;
 } else {
   document.getElementById("sidebar").style.width = "0";
-  document.getElementById("sidebar").style.background = "rgba(0, 0, 0, 1)";
+  document.getElementById("sidebar").style.background = "rgba(0, 0, 0, 0.9)";
   document.getElementById("hamButton").classList.remove("is-active");
   menuOpen = false;
 }

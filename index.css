@@ -216,9 +216,6 @@ display: flexbox;
   justify-content: flex-start;
 }
 
-.square {
-
-}
 
 
 
@@ -381,32 +378,41 @@ z-index: -999;
   padding-top: 60px;
   opacity:1;
   z-index: 9999;
+  text-align: center;
 }
 
 
 #sidebar a {
+  width:100%;
   position:absolute;
   text-decoration: none;
   font-size: 40px;
   font-family: 'lato',sans-serif;
   font-weight: 300;
-  padding: 8px 12px 300px 30px;
-  margin: 40px;
-  transition: all 0.3s ease-in-out 0s;
+  padding: 0;
+  margin: 0;
+  transition: all 1s ease-in-out 0s;
   color: white;
+  
 }
 
 #sidebarWelcome {
-  top: 50px;
-}
-
-#sidebarAbout {
-  top: 150px;
+  top:100px;
+  transform: translate(-50%, -50%);
 }
 
 #sidebarProjects {
-  top: 100px;
+  top: 170px;
+  transform: translate(-50%, -50%);
 }
+
+#sidebarAbout {
+  transform: translate(-50%, -50%);
+  top: 240px;
+}
+
+
+
 
 #sidebar a:before {
   background-color: #1565c0;
@@ -414,15 +420,16 @@ z-index: -999;
   position: absolute;
   width:0vw;
   height:2px;
-  left:-200px;
-  bottom:90%;
-  transition: all 0.3s ease-in-out 0s;
+  top:25px;
+  left:-0vw;
+  transition: all 0.2s ease-in-out 0s;
   z-index: -1;
 }
 
 
 #sidebar a:hover:before {
-  width:150vw;
+  
+  width:100vw;
   transform: scaleY(2);
 
 }
