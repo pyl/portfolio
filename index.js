@@ -156,7 +156,7 @@ this.y+=this.dy;
 //when mouse close
 if (trueX - this.x < 10 && trueX - this.x > -10
  && trueY - this.y < 10 && trueY - this.y > -10)
-    
+{
     if (this.radius < maxRadius) {
       this.radius += 4;
     }
