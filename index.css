@@ -11,6 +11,10 @@
 
 button:focus {outline:0;}
 
+html {
+  height: 100%;
+}
+
 h1 {
   padding:0px;
   color: white;
@@ -98,6 +102,11 @@ b {
 
 body {
   margin:0px;
+  height: 100%;
+}
+
+  h1 {
+  margin: 0px;
 }
 
 .page {
@@ -120,6 +129,7 @@ body {
   width:200px;
   height:50px;
 }
+  
 
 #top {
   background-image: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
@@ -131,7 +141,6 @@ body {
   position:absolute;
   height:100%;
   width:100%;
-
 }
 
 #imageGallery {
@@ -181,6 +190,10 @@ padding: 0px 4px;
 p {
 
   color:rgb(219, 232, 212);
+}
+
+a {
+  color: inherit;
 }
 
 #selfie {

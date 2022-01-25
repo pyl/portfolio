@@ -1,57 +1,56 @@
-
-
 <html>
-  <head>
+
+<head>
   <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
   <link href="aos.css" rel="stylesheet">
   <script src="aos.js"></script>
   <link rel="stylesheet" href="index.css">
   <link href="hamburgers.css" rel="stylesheet">
-  
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="index.js" defer></script>
   <title>Portfolio</title>
   <script>
-  AOS.init();
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-  $(document).ready(function(){
-    // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
-  
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-  
-        // Store hash
-        var hash = this.hash;
-  
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-    
-          
-        });
-      } // End if
-    });
-  });
+    AOS.init();
   </script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on('click', function (event) {
 
-  <body>
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+
+
+          });
+        } // End if
+      });
+    });
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
 
 
   <div id="top">
-    <canvas id=circles></canvas>
-  <h1>PAUL BELTRAN</h1>
-  <h6>Your Typical Computer Science Student</h6>
+    <canvas id="circles"></canvas>
+    <h1>PAUL BELTRAN</h1>
+    <h6>Your Typical Computer Science Student</h6>
 
-<a href = "#projectspage"><button id="goButton">View Projects</button></a>
+    <a href="#projectspage"><button id="goButton">View Projects</button></a>
 
   </div>
 
@@ -60,153 +59,162 @@
 
 
 
-<div id=projectspage>
+  <div id=projectspage>
 
 
 
-<div>
+    <div>
 
-<div class="textbox">
+      <div class="textbox">
 
-</div>
+      </div>
 
 
 
-  <h2>PROJECTS</h2>
-  <div id="projectgrid">
-  <div class=pcolumn>
-  <div class="prow">
-    <div class="pcontent" data-aos="fade-right" data-aos-delay="400">
-      <a href="https://pyl.github.io/portfolio/">
-        <img src="img/portimg.png">
-      </a>
-      <p>Portfolio</p>
+      <h2>PROJECTS</h2>
+      <div id="projectgrid">
+        <div class=pcolumn>
+          <div class="prow">
+            <div class="pcontent" data-aos="fade-right" data-aos-delay="400">
+              <a href="https://pyl.github.io/portfolio/">
+                <img src="img/portimg.png">
+              </a>
+              <p>Portfolio</p>
+            </div>
+          </div>
+          <div class="prow">
+            <div class="pcontent" data-aos="fade-right" data-aos-delay="300">
+
+              <a href=" ">
+                <img src="img/whitebox.png">
+              </a>
+              <p></p>
+
+            </div>
+          </div>
+          <div class="prow">
+            <div class="pcontent" data-aos="fade-right" data-aos-delay="200">
+              <a href=" ">
+                <img src="img/whitebox.png">
+              </a>
+              <p> </p>
+            </div>
+          </div>
+          <div class="prow">
+            <div class="pcontent" data-aos="fade-right" data-aos-delay="100">
+              <a href=" ">
+                <img src="img/whitebox.png">
+              </a>
+              <p> </p>
+            </div>
+          </div>
+        </div>
+        <div class=pcolumn>
+          <div class="prow">
+            <div class="pcontent" data-aos="fade-right" data-aos-delay="600">
+              <a href=" ">
+                <img src="img/whitebox.png">
+              </a>
+              <p> </p>
+            </div>
+          </div>
+          <div class="prow">
+            <div class="pcontent" data-aos="fade-right" data-aos-delay="500">
+              <a href=" ">
+                <img src="img/whitebox.png">
+              </a>
+              <p> </p>
+            </div>
+          </div>
+          <div class="prow">
+            <div class="pcontent" data-aos="fade-right" data-aos-delay="400">
+              <a href=" ">
+                <img src="img/whitebox.png">
+              </a>
+              <p> </p>
+            </div>
+          </div>
+          <div class="prow">
+            <div class="pcontent" data-aos="fade-right" data-aos-delay="300">
+              <a href=" ">
+                <img src="img/whitebox.png">
+              </a>
+              <p> </p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-    <div class="prow">
-      <div class="pcontent" data-aos="fade-right" data-aos-delay="300">
 
-        <a href=" ">
-          <img src="img/whitebox.png">
-      </a>
-      <p></p>
+    <div id="aboutMe" class="page">
+      <h2 c>ABOUT</h2>
 
-        </div>
-    </div>
-    <div class="prow">
-      <div class="pcontent" data-aos="fade-right" data-aos-delay="200">
-        <a href=" ">
-          <img src="img/whitebox.png">
-      </a>
-      <p> </p>
-        </div>
-    </div>
-    <div class="prow">
-      <div class="pcontent" data-aos="fade-right" data-aos-delay="100">
-        <a href=" ">
-          <img src="img/whitebox.png">
-      </a>
-      <p> </p>
-        </div>
-    </div>
-  </div>
-  <div class=pcolumn>
-  <div class="prow">
-    <div class="pcontent" data-aos="fade-right" data-aos-delay="600">
-      <a href=" ">
-        <img src="img/whitebox.png">
-    </a>
-    <p> </p>
+      <div class="textbox">
+        <p data-aos="fade-right" data-aos-delay="500">
+          Hi! Welcome to my website. My name is Paul Beltran Jr. I'm a CS freshman at UMD,
+          a Software Engineer Intern at Microsoft, and,
+        </p>
+        <p style="text-align: center" data-aos="fade-right" data-aos-delay="500">
+          <b>I like making cool things.</b>
+        </p>
+        <p>
+          Now when you look at the projects section, you can see there's only one thing:
+          the portfolio you're looking at right now. Fear not, potential employer,
+          I have done other things, such as a failed get rich quick scheme, a gallery of
+          javascript art installations, multiple games, and a chat website.
+          They're coming out when I finish them. Soon™. <a href="https://pyl.github.io/paulbe.com/">(If you really want
+            to see them,
+            here you go.)</a>
+        </p>
+
+        <p>
+          From my experience, I have become proficient at
+          <b>Python, C++, Java, HTML, CSS, </b>and<b> Javascript</b>.
+        </p>
+
+        <p data-aos="fade-right" data-aos-delay="500">When I'm not writing short stories
+
+        </p>
+
+        <p data-aos="fade-right" data-aos-delay="500">If you're interested in working with me or simply want to chat,
+          contact me below!</p>
       </div>
+
+
     </div>
-    <div class="prow">
-      <div class="pcontent" data-aos="fade-right" data-aos-delay="500">
-        <a href=" ">
-          <img src="img/whitebox.png">
-      </a>
-      <p> </p>
-        </div>
-    </div>
-    <div class="prow">
-      <div class="pcontent" data-aos="fade-right" data-aos-delay="400">
-        <a href=" ">
-          <img src="img/whitebox.png">
-      </a>
-      <p> </p>
-        </div>
-    </div>
-    <div class="prow">
-      <div class="pcontent" data-aos="fade-right" data-aos-delay="300"> 
-        <a href=" ">
-          <img src="img/whitebox.png">
-      </a>
-      <p> </p>
-        </div>
-    </div>
-  </div>
 
-</div>
-</div>
+    <div id="Contact">
+      <div class="container">
+        <span data-aos="zoom-in" data-aos-delay="500"><a href="PaulTeX.pdf" class="fa fa-file fa-2x"
+            target=“_blank”></a></span>
+        <span data-aos="zoom-in" data-aos-delay="800"><a href="https://github.com/pyl"
+            class="fa fa-github fa-2x"></a></span>
+        <span data-aos="zoom-in" data-aos-delay="1100"><a href="https://www.linkedin.com/in/paul-beltran-7b0b521a8/"
+            class="fa fa-linkedin fa-2x"></a></span>
+        <span data-aos="zoom-in" data-aos-delay="1400"><a href="https://www.instagram.com/paul_beltra_n/"
+            class="fa fa-instagram fa-2x"></a></span>
 
-<div id="aboutMe" class="page">
-  <h2 c>ABOUT</h2>
-  
-  <div class="textbox">
-<!-- 
-  Hi! Thanks for checking out my website. I'm a computer science major at Montgomery College. 
+      </div>
+      <h5>python8u@gmail.com
+      </h5>
 
 
--->
+      <div id="sidebar">
 
-  <p data-aos="fade-right" data-aos-delay="500"> 
-    I'm a Computer Science major, a computer science tutor, and interning as a project manager at Federal Student Aid (for a computer science project). 
-    Naturally entrepreneurial, I fell in love with computer science when I realized the potential for growth in the
-    relatively new field. With my keen eye for design and a love for solving
-    problems creatively, I knew I could contribute to the field
-    Since then, I have become proficient in <b>Python, C++, Java, HTML, CSS, </b>and<b> Javascript</b>. 
-  </p>
+        <button class="hamburger hamburger--spin" type="button" id="hamButton">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
 
-  <p data-aos="fade-right" data-aos-delay="500">When I'm not writing short stories 
-    or playing puzzle games, you can find me strengthening the same creativity
-    and problem solving skills coding and trying to automate the annoying 
-    things out of my life. That's the thing about me: I'm always improving,
-    raising the bar, getting closer to reaching my true potential.
-
-     </p>
-
-  <p data-aos="fade-right" data-aos-delay="500">If you're interested in working with me or simply want to chat, contact me below!</p>
-</div>
+        </button>
 
 
-</div>
 
-<div id = "Contact">
-  <div class="container">
-    <span data-aos="zoom-in" data-aos-delay="500"><a  href = "PaulTeX.pdf" class="fa fa-file fa-2x" target=“_blank”></a></span>
-  <span data-aos="zoom-in" data-aos-delay="800"><a  href = "https://github.com/pyl" class="fa fa-github fa-2x" ></a></span>
-  <span data-aos="zoom-in" data-aos-delay="1100"><a  href = "https://www.linkedin.com/in/paul-beltran-7b0b521a8/" class="fa fa-linkedin fa-2x"></a></span>
-  <span data-aos="zoom-in" data-aos-delay="1400"><a  href = "https://www.instagram.com/paul_beltra_n/" class="fa fa-instagram fa-2x" ></a></span>
-
- </div>
- <h5>python8u@gmail.com
- </h5>
-
-
-<div id="sidebar">
-
-    <button class="hamburger hamburger--spin" type="button" id="hamButton">
-    <span class="hamburger-box">
-      <span class="hamburger-inner"></span>
-    </span>
-
-  </button>
-
-
- 
-  <a  id = "sidebarWelcome" href="#top" onclick="toggleMenu();">Welcome</a>
-  <a id = "sidebarProjects" href="#projectspage" onclick="toggleMenu();">Projects</a>
-  <a  id = "sidebarAbout" href = "#aboutMe" onclick="toggleMenu();">About</a>
-</div>
+        <a id="sidebarWelcome" href="#top" onclick="toggleMenu();">Welcome</a>
+        <a id="sidebarProjects" href="#projectspage" onclick="toggleMenu();">Projects</a>
+        <a id="sidebarAbout" href="#aboutMe" onclick="toggleMenu();">About</a>
+      </div>
 
 
 </body>
