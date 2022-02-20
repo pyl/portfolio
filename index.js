@@ -65,8 +65,7 @@ function scrollProjects() {
 
 
 
-var canvas = document.querySelector("canvas");
-console.log(canvas)
+var canvas = document.querySelector("#circles");
 window.onbeforeunload = function() {
   window.scrollTo(0, 0);
 }
